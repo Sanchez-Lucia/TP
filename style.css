@@ -1,0 +1,26 @@
+:root {
+    --green-color: rgb(44, 139, 135);
+    --blue-color: rgb(56, 72, 160);
+  }
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imagenes_integrador_front/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.img-card {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.bg-footer {
+    background-color: var(--green-color);
+}
+
+.a-reset {
+    color: white;
+    text-decoration: none;
+}
