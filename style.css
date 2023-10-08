@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-    --green-color: rgb(44, 139, 135);
-    --blue-color: rgb(56, 72, 160);
+    --green-color: rgb(19, 110, 106);
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
   }
 
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes_integrador_front/ba1.jpg);
     background-position: center;
     background-size: cover;
-    height: 750px;
+    height: 700px;
 }
 
 .img-card {
@@ -23,4 +28,14 @@
 .a-reset {
     color: white;
     text-decoration: none;
+}
+
+.boton-reset:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.boton:hover {
+    color: black;
+    background: white;
 }
