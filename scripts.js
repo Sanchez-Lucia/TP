@@ -15,5 +15,21 @@ const totalPagar = document.getElementById('totalAPagar');
 const btnResumen = document.getElementById('resumen');
 
 function calcularPago() {
-    let total = ;
+    let total = cantidad.value * ticket;
+    switch(categoria.value) {
+        case "estudiante":
+            total = total - (total * dscEstudiante);
+            break;
+        case "trainee":
+            total = total - (total * dscTrainee);
+            break;
+      case "junior":
+            total = total - (total * dscJunior);
+            break;
+        default:
+            total = "";
+    }
 };
+
+
+totalPagar.textContent = `Total a pagar: $ ${total}`;
