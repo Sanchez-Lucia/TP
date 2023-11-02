@@ -23,13 +23,19 @@ function calcularPago() {
         case "trainee":
             total = total - (total * dscTrainee);
             break;
-      case "junior":
+        case "junior":
             total = total - (total * dscJunior);
             break;
         default:
             total = "";
     }
+
+    totalPagar.textContent = `Total a pagar: $ ${total}`;
+
 };
 
-
-totalPagar.textContent = `Total a pagar: $ ${total}`;
+btnResumen.addEventListener('click', (evento)=> {
+    evento.preventDefault();
+    calcularPago();
+}
+);
