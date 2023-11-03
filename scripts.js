@@ -34,8 +34,28 @@ function calcularPago() {
 
 };
 
+// Prueba para comprobar que haya datos
+
+var objetoCampo = document.getElementsByClassName('form-control');
+
+function recorrerObjeto() {
+    for (let i = 0; i < objetoCampo.length; i++) {
+        valorCampo = objetoCampo[i].value
+        console.log(valorCampo);
+         if (valorCampo == "") {
+            objetoCampo[i].classList.add('is-invalid');
+         } else {
+            objetoCampo[i].classList.add('is-valid');
+         };
+    };
+};
+
 btnResumen.addEventListener('click', (evento)=> {
     evento.preventDefault();
     calcularPago();
+    recorrerObjeto();
+   
 }
 );
+
+
