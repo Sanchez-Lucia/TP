@@ -50,10 +50,10 @@ function recorrerObjeto() {
 };
 
 function comprobarCategoria() {
-    if (categoria.textContent == "Sin categoria") {
+    if (categoria.value == "") {
         categoria.classList.add('is-invalid');
     } else {
-        categoria.classList.add('is-invalid');
+        categoria.classList.add('is-valid');
     }
 };
  
